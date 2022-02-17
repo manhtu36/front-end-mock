@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>News</title>
+    <!-- plugin css for this page -->
+    <script src="plugins/jquery/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="./assets/vendors/mdi/css/materialdesignicons.min.css"
+    />
+    <link rel="stylesheet" href="assets/vendors/aos/dist/aos.css/aos.css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <!-- End plugin css for this page -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="css/stype_home_page.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- endinject -->
+  </head>
+
+  <body>
+    <div class="container-scroller">
+      <div class="main-panel">
+        <!-- partial:partials/_navbar.html -->
+        <header id="header">
+          <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <div class="navbar-top">
+                <div class="d-flex justify-content-between align-items-center">
+                  <ul class="navbar-top-left-menu">
+                    <li class="nav-item">
+                      <a href="" class="nav-link">Advertise</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">Write for Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="#" class="nav-link">In the Press</a>
+                    </li>
+
+                  </ul>
+                  <ul class="navbar-top-right-menu">
+                    <li class="nav-item">
+                      <di>
+                        <input type="text" class="my_search" name="keyword">
+                        <button class="" id="btn_search">Search</button>
+
+                      </di>
+
+                    </li>
+                    <li class="nav-item">
+
+                    </li>
+
+                  </ul>
+                </div>
+              </div>
+              <div class="navbar-bottom">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div>
+                    <a class="navbar-brand" href="#"
+                      ><img src="assets/images/logo.svg" alt=""
+                    /></a>
+                  </div>
+                  <div>
+                    <button
+                      class="navbar-toggler"
+                      type="button"
+                      data-target="#navbarSupportedContent"
+                      aria-controls="navbarSupportedContent"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                    >
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                      class="navbar-collapse justify-content-center collapse"
+                      id="navbarSupportedContent"
+                    >
+                      <ul
+                        class="navbar-nav d-lg-flex justify-content-between align-items-center"
+                      >
+                        <li>
+                          <button class="navbar-close">
+                            <i class="mdi mdi-close"></i>
+                          </button>
+                        </li>
+                        <li class="nav-item active">
+                          <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">MAGAZINE</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Business</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Sports</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Art</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">POLITICS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Travel</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="">Contact</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <ul class="social-media">
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-facebook"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-youtube"></i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <i class="mdi mdi-twitter"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <!-- partial -->
+        <div class="content-wrapper">
+          <div class="container">
+            <div class="row" data-aos="fade-up">
+              <div class="col-xl-8 stretch-card grid-margin">
+                <div class="position-relative">
+                  <img
+                    src="assets/images/dashboard/banner.jpg"
+                    alt="banner"
+                    class="img-fluid"
+                  />
+                  <div class="banner-content">
+                    <div class="badge badge-danger fs-12 font-weight-bold mb-3">
+                      global news
+                    </div>
+                    <h1 class="mb-0">GLOBAL PANDEMIC</h1>
+                    <h1 class="mb-2">
+                      Coronavirus Outbreak LIVE Updates: ICSE, CBSE Exams
+                      Postponed, 168 Trains
+                    </h1>
+                    <div class="fs-12">
+                      <span class="mr-2">Photo </span>10 Minutes ago
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 stretch-card grid-margin">
+                <div class="card bg-dark text-white">
+                  <div class="card-body">
+                    <h2>Latest news</h2>
+
+                    <div
+                      class="d-flex border-bottom-blue pt-3 pb-4 align-items-center justify-content-between"
+                    >
+                      <div class="pr-3">
+                        <h5>Virus Kills Member Of Advising Iran’s Supreme</h5>
+                        <div class="fs-12">
+                          <span class="mr-2">Photo </span>10 Minutes ago
+                        </div>
+                      </div>
+                      <div class="rotate-img">
+                        <img
+                          src="assets/images/dashboard/home_1.jpg"
+                          alt="thumb"
+                          class="img-fluid img-lg"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex border-bottom-blue pb-4 pt-4 align-items-center justify-content-between"
+                    >
+                      <div class="pr-3">
+                        <h5>Virus Kills Member Of Advising Iran’s Supreme</h5>
+                        <div class="fs-12">
+                          <span class="mr-2">Photo </span>10 Minutes ago
+                        </div>
+                      </div>
+                      <div class="rotate-img">
+                        <img
+                          src="assets/images/dashboard/home_2.jpg"
+                          alt="thumb"
+                          class="img-fluid img-lg"
+                        />
+                      </div>
+                    </div>
+
+                    <div
+                      class="d-flex pt-4 align-items-center justify-content-between"
+                    >
+                      <div class="pr-3">
+                        <h5>Virus Kills Member Of Advising Iran’s Supreme</h5>
+                        <div class="fs-12">
+                          <span class="mr-2">Photo </span>10 Minutes ago
+                        </div>
+                      </div>
+                      <div class="rotate-img">
+                        <img
+                          src="assets/images/dashboard/home_3.jpg"
+                          alt="thumb"
+                          class="img-fluid img-lg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" data-aos="fade-up">
+              <div class="col-lg-3 stretch-card grid-margin">
+                <div class="card">
+                  <div class="card-body">
+                    <h2>Category</h2>
+                    <ul class="vertical-menu" id="category_list">
+                      <li><button >category</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="" id="news_list">
+
+              </div>
+              <div id="paging" class="paging">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+  <div class="modal fade" id="my_modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle"></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal_body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-5">
+              <img src="assets/images/logo.svg" class="footer-logo" alt="" />
+              <h5 class="font-weight-normal mt-4 mb-5">
+                Newspaper is your news, entertainment, music fashion website. We
+                provide you with the latest breaking news and videos straight from
+                the entertainment industry.
+              </h5>
+              <ul class="social-media mb-3">
+                <li>
+                  <a href="#">
+                    <i class="mdi mdi-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="mdi mdi-youtube"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i class="mdi mdi-twitter"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="font-weight-bold mb-3">RECENT POSTS</h3>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="footer-border-bottom pb-2">
+                    <div class="row">
+                      <div class="col-3">
+                        <img
+                          src="assets/images/dashboard/home_1.jpg"
+                          alt="thumb"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-9">
+                        <h5 class="font-weight-600">
+                          Cotton import from USA to soar was American traders
+                          predict
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="footer-border-bottom pb-2 pt-2">
+                    <div class="row">
+                      <div class="col-3">
+                        <img
+                          src="assets/images/dashboard/home_2.jpg"
+                          alt="thumb"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-9">
+                        <h5 class="font-weight-600">
+                          Cotton import from USA to soar was American traders
+                          predict
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-12">
+                  <div>
+                    <div class="row">
+                      <div class="col-3">
+                        <img
+                          src="assets/images/dashboard/home_3.jpg"
+                          alt="thumb"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="col-9">
+                        <h5 class="font-weight-600 mb-3">
+                          Cotton import from USA to soar was American traders
+                          predict
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3">
+              <h3 class="font-weight-bold mb-3">CATEGORIES</h3>
+              <div class="footer-border-bottom pb-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0 font-weight-600">Magazine</h5>
+                  <div class="count">1</div>
+                </div>
+              </div>
+              <div class="footer-border-bottom pb-2 pt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0 font-weight-600">Business</h5>
+                  <div class="count">1</div>
+                </div>
+              </div>
+              <div class="footer-border-bottom pb-2 pt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0 font-weight-600">Sports</h5>
+                  <div class="count">1</div>
+                </div>
+              </div>
+              <div class="footer-border-bottom pb-2 pt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0 font-weight-600">Arts</h5>
+                  <div class="count">1</div>
+                </div>
+              </div>
+              <div class="pt-2">
+                <div class="d-flex justify-content-between align-items-center">
+                  <h5 class="mb-0 font-weight-600">Politics</h5>
+                  <div class="count">1</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="d-sm-flex justify-content-between align-items-center">
+                <div class="fs-14 font-weight-600">
+                  © 2020 @ <a href="" target="_blank" class="text-white"> BootstrapDash</a>. All rights reserved.
+                </div>
+                <div class="fs-14 font-weight-600">
+                  Handcrafted by <a href="" target="_blank" class="text-white">BootstrapDash</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- inject:js -->
+  
+  <script src="assets/vendors/js/vendor.bundle.base.js"></script> -->
+  <script src="assets/vendors/aos/dist/aos.js/aos.js"></script>
+
+
+  <script src="./assets/js/demo.js"></script>
+  <script src="./assets/js/jquery.easeScroll.js"></script>
+  <!-- End custom js for this page-->
+  <script src="js/homepage.js"></script>
+</html>

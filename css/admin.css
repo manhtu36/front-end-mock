@@ -1,0 +1,80 @@
+
+/* modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 500px ;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  margin: 0 auto;
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: .3rem;
+  outline: 0;
+
+}
+.row_content{
+  width: 80%;
+  margin-bottom: 50px;
+  margin-top:  30px;
+}
+
+.modal-body {
+  padding: 1rem;
+}
+
+.modal-footer {
+  display: flex;
+  border-top: 1px solid #aaaaaa;
+  padding: 1rem;
+  flex-direction: row;
+  justify-content: flex-end;
+  border-top: 1px solid #aaaaaa;
+  padding: 1rem;
+}
+
+.modal-footer>:not(:first-child) {
+  margin-left: .25rem;
+}
+.box_image{
+  width: 150px;
+  height: 150px;
+}
+.img-thumbnail{
+  width: 200px;
+  height: 200px;
+}
+.my_input {
+  width: 80%;
+}
+.news_content{
+  display: none;
+}
+.btn_edit_news{
+  background-color: turquoise;
+}
+.btn_delete_news{
+  background-color: rgb(233, 87, 87);
+  font-weight: bold;
+}
+.btn_edit_category{
+  background-color: turquoise;
+}
+.btn_delete_category{
+  background-color: rgb(233, 87, 87);
+  font-weight: bold;
+}

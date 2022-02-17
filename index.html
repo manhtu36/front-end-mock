@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Admin Dashboad</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/admin.css">
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Font Awesome -->
+<!--  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Ionicons -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bbootstrap 4 -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
+  <script src="plugins/ckeditor/ckeditor.js"></script>
+  <!-- <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css"> -->
+   <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css"> -->
+  <!-- Daterange picker -->
+<!--  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">-->
+  <!-- summernote -->
+<!--  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">-->
+  <!-- <link rel="stylesheet" href="plugins/summernote/summernote-bs4.css"> -->
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+  
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- righ navbar -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <button id="btn_logout" class="btn-block">Logout</button>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+    </ul>
+    
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+
+        <div class="info">
+          <a href="#" class="d-block" id="admin_name">Name Admin</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item">
+
+            <button id="btn_category" class="btn-block" >Quan Tri Danh Muc Tin Tuc </button>
+          </li>
+          <li class="nav-item">
+            <button id="btn_news" class="btn-block" >Quan Tri Tin Tuc </button>
+          </li>
+          
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- /.Content-Wrap -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1>DataTables</h1>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">DataTables</li>
+            </ol>
+          </div>
+        </div>
+      </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="card">
+              <div class="card-header">
+                <h3 class="card-title">DataTable with minimal features & hover style</h3>
+              </div>
+              <!-- /.card-header -->
+
+
+              <div class="card">
+                <div class="card-header" id="block_btn_create">
+<!--                  <button id="btn_create" style="display:none">Create</button>-->
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                  <table id="example1"  class="table table-bordered table-striped">
+                    <thead id="table_header">
+
+
+                    </thead>
+                    <tbody id="table_content">
+
+                    </tbody>
+
+                  </table>
+                </div>
+              </div>
+                <!-- /.card-body -->
+              <div id="paging">
+
+              </div>
+              </div>
+              <!-- /.card -->
+            </div>
+            <!-- /.col -->
+          </div>
+          <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+    </section>
+    <!-- /.content -->
+  </div>
+  <div class="modal fade" id="modal_category" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-xl" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal_category_title"> Category</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal_category_body">
+          <label id="category_id"></label>
+          <div class="row_content">
+            <label >Category Name</label>
+            <input class="my_input" type="text" id="category_name" name="category_name" placeholder="Category name..">
+
+          </div>
+          <div class="row_content">
+            <label >Imgae</label>
+            <!-- <input type="text" class="my_input" id="category_imgae" name="category_image" placeholder="Imgae.."> -->
+          
+            <input type="file" id="input_category_image" value="Choose Image" >
+            
+            <div id="box_image" class="box_image" >
+              
+            </div>
+          </div>
+
+          
+
+        </div>
+        <div class="modal-footer" id="category_modal_footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  id="btn_save_category">Create Category</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modal_news" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal_news_title"> News</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" id="modal_news_body">
+          <label id="news_id"></label>
+          <div class="row_content">
+            <label>Category ID</label>
+            <select name="cars" id="select_category_id">
+            </select>
+          </div>
+          <div class="row_content">
+            <label > Title</label>
+            <input class="my_input" type="text" id="news_title"  placeholder=" Title..">
+            
+          </divclass="row_content">
+          <div class="row_content">
+            <label > Content</label>
+            
+            <textarea placeholder="content" name="news_content" id="news_content"> </textarea>
+            
+          </div>
+          <div class="row_content">
+            <label > Summary</label>
+            <input class="my_input" type="text" id="news_summary"  placeholder=" Summary..">
+            
+          </div>
+          <div class="row_content">
+            <label > KeyWord</label>
+            <input class="my_input" type="text" id="news_keyword"  placeholder=" KeyWord..">
+            
+          </div>
+          <div class="row_content">
+            <label >Imgae</label>
+          
+            <input type="file" id="input_news_image" value="Choose Image" >
+            
+            <div id="box_image_news" ></div>
+          </div>
+        
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"  id="btn_save_news" >Create News</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /.Content Wrap -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2022 <a href="">NMT Solution</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.0.5
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script>
+  CKEDITOR.replace( 'news_content' );
+  
+</script>
+
+<script src="js/news.js"></script>
+<script src="js/category.js"></script>
+
+
+</body>
+</html>
