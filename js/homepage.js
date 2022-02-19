@@ -196,7 +196,7 @@
             })
     }
     function search_news_api(keyword){
-        console.log(keyword)
+        //console.log(keyword)
         var options={
             method :'POST',
             headers:{
