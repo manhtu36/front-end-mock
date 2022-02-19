@@ -45,7 +45,8 @@
     })
     $(document).on('click','.btn_page',function(e){
         let that = $(this)
-        
+        $('.btn_page').css('background-color','#f8f9fa')
+        that.css('background-color','pink')
         let page =that.text()
         paging(page)
         //console.log(page)

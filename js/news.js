@@ -106,7 +106,7 @@
             table_header.children().remove()
             let str_table_header = `<tr>
                                             <td>ID</td>
-                                            <td>Catrgory ID</td>
+                                            <td>Catrgory Name</td>
                                             
                                             <td>Title</td>
                                             <td>Summary</td>
@@ -176,7 +176,9 @@
                             if (data !=null) {
                                 let str_content
                                 for (let i = 0; i < data.length; i++) {
-                                    str_content += `<option value="${data[i].category_id}">${data[i].category_name}</option>`
+                                    let selected = category_id==data[i].category_id?'selected':''
+                                    str_content += `<option value="${data[i].category_id}" ${selected} >${data[i].category_name}</option>`
+                                    
 
                                 }
                                 ele_select_category.children().remove()
@@ -190,7 +192,7 @@
                 })
 
 
-            // $("#select_category_id option:selected").val(category_id)
+            //$("#select_category_id option:selected").val(category_id)
             // $("#select_category_id option:selected").text(category_id)
             $('#news_title').val(news_title)
             //$('#news_content').val(news_content)
@@ -340,7 +342,8 @@
 
                             let tr_element = `<tr>
                             <td class ="id_news">${data.news_id}</td>
-                            <td>${data.category_id}</td>
+                            <td class="category_id">${data.category_id}</td>
+                            <td> ${data.category_name}</td>
                             <td class="news_content">${data.content}</td>
                             <td>${data.title}</td>
                             <td>${data.summary}</td>
@@ -400,7 +403,9 @@
             str_content += `<tr>
                                             <td class ="id_news">${data[i].news_id}</td>
                                             <td class="category_id">${data[i].category_id}</td>
+                                            <td class="category_name">${data[i].category_name}</td>
                                             <td class="news_content">${data[i].content}</td>
+                                            
                                             <td class="news_title">${data[i].title}</td>
                                             <td class="news_summary">${data[i].summary}</td>
                                             <td class="news_keyword">${data[i].keyword}</td>

@@ -78,3 +78,6 @@
   background-color: rgb(233, 87, 87);
   font-weight: bold;
 }
+.category_id{
+  display: none;
+}
