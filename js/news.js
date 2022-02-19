@@ -218,9 +218,9 @@
         //console.log(url_image)
         let d = new Date()
         let update_at = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getUTCDate()
-        if (url_image.indexOf(config_domain) > -1) {
-            url_image = ''
-        }
+        // if (url_image.indexOf(config_domain) > -1) {
+        //     url_image = ''
+        // }
         formdata = {
             "news_id": id,
             "category_id": category_id,
@@ -248,7 +248,7 @@
         let summary = $('#news_summary').val()
         let keyword = $('#news_keyword').val()
         let url_image = $('#box_image_news').children().attr('src') ? $('#box_image_news').children().attr('src') : ''
-        console.log(url_image)
+        //console.log(url_image)
         let d = new Date()
         let created_at = d.getFullYear() + '-' + (d.getMonth() + 1) + '-' + d.getUTCDate()
 

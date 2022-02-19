@@ -30,6 +30,9 @@
         return null
     }
     var token =getCookie('token')
+    if(!token){
+        window.location.href= 'http://127.0.0.1:5500/login.html' 
+    }
     function start(){
         
         handle_get_category()
@@ -39,9 +42,7 @@
     }
 
     start()
-    if(!token){
-        window.location.href= 'http://127.0.0.1:5500/login.html' 
-    }
+    
     
     $(document).on('click','#btn_logout',function(e){
         let options={
@@ -144,16 +145,16 @@
         //console.log(ele_box_img_modal.children().attr('src'))
         let id = $('#category_id').val()
         let url_image =ele_box_img_modal.children().attr('src')?ele_box_img_modal.children().attr('src'):''
-        if(url_image.indexOf(config_domain)> -1){
-            url_image=''
-        }
+        // if(url_image.indexOf(config_domain)> -1){
+        //     url_image=''
+        // }
         
         formdata={
             'category_id':id,
             'category_name':category_name,
             'url_image':url_image
         }
-        console.log(formdata)
+        //console.log(url_image)
         edit_category_api(formdata)
         
         $('#modal_category').modal('hide')
@@ -187,9 +188,9 @@
              let box_image =$('#box_image')
              let image_base64 =box_image.children().attr('src')?box_image.children().attr('src'):''
 
-             if(image_base64.indexOf(config_domain)> -1){
-                image_base64=''
-            }
+            //  if(image_base64.indexOf(config_domain)> -1){
+            //     image_base64=''
+            // }
              formdata={
                  "category_name":category,
                  "url_image":image_base64
